@@ -22,7 +22,7 @@ let countLikes = 0;
 async function fetchPhoto() {
   try {
     const response = await fetch(
-      'https://api.unsplash.com/photos/random/?client_id=617rSueCkvkaPB1_lKWjcI1xKpV-Vw_4rHLpAsmSOlw'
+      'https://api.unsplash.com/photos/random/?client_id=KEY'
     );
     const data = await response.json();
     return data;
