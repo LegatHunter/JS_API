@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="./script.js" defer></script>
+  <style>
+    #photoContainer {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .photo {
+      flex: 1 1 calc(33.33% - 20px);
+      margin: 10px;
+      border: 1px solid #ccc;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+      overflow: hidden;
+    }
+    .photo img {
+      width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <section class="first">
+    <h1>Выберите категорию товара</h1>
+    <br>
+    <select name="category" id="categorySelect">
+      <option value="phone" class="tovar1" selected>Телефоны</option>
+      <option value="TV" class="tovar2">ТВ</option>
+      <option value="laptop" class="tovar3">Ноутбуки</option>
+    </select>
+    <h2>Товары:</h2>
+    <ul class="list">
+
+    </ul>
+  </section>
+  <section class="two" id="photoContainer">
+
+  </section>
+  
+</body>
+</html>
